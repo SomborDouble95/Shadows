@@ -6,7 +6,7 @@
 
 body {
     color: white;
-    font: 20px "Lucida Console", Monaco, monospace;
+    font: 18px "Lucida Console", Monaco, monospace;
     text-align: center;
     margin: 0;
     width: 100vw;
@@ -31,7 +31,7 @@ body {
 }
 
 .background2{
-    background: url('https://images.unsplash.com/photo-1470803233534-acd0cc85f275?q=80&w=2804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background: url('https://images.unsplash.com/photo-1494548162494-384bba4ab999?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -40,7 +40,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: -2000;
-    scale: 1;
+    scale: 1.1;
     transition:2s ease-in-out;
 }
 
@@ -78,7 +78,7 @@ h2 {
 
 p {
     line-height: 1.5;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 h2:before, h4:before {
