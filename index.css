@@ -9,6 +9,11 @@ body {
     font: 20px "Lucida Console", Monaco, monospace;
     text-align: center;
     margin: 0;
+    width: 100vw;
+    height:auto;
+    overflow-x: hidden;
+    display: grid;
+    place-items: center;
 }
 
 .background {
@@ -35,7 +40,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: -2000;
-    scale: 1.1;
+    scale: 1;
     transition:2s ease-in-out;
 }
 
@@ -45,10 +50,11 @@ div, h1, h2, p {
 }
 
 #poem { 
-    margin: auto;
+    margin: 0 auto;
     padding: 30px 0;
-    text-align: left;
-    width: 360px;
+    text-align: center;
+    width: 100%;
+    height: auto;
 }
 
 h1, h2, h4 {
@@ -84,7 +90,6 @@ h2:after, h4:after {
 }
 
 #poem h2 + p:first-letter {
-    float: left;
     color: purple;
     font-size: 38px;
     line-height: 1;

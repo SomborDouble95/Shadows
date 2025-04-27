@@ -6,7 +6,7 @@ let tl = gsap.timeline({
     // yes, we can add it to an entire timeline!
     scrollTrigger: {
         trigger: 'body',
-        start: '20% top', // when the top of the trigger hits the top of the viewport
+        start: '10% top', // when the top of the trigger hits the top of the viewport
         end: '+=500', // end after scrolling 500px beyond the start
     }
 });
@@ -17,6 +17,10 @@ tl.to('.background', {
     ease: 'power1.inOut'
 }).to('body', {
     color: 'black',
+    duration: 1,
+    ease: 'power1.inOut'
+}, '<').to('#poem', {
+    backgroundColor: 'rgba(255, 255, 255, 0.19)',
     duration: 1,
     ease: 'power1.inOut'
 }, '<');
