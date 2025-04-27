@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font: 20px "Lucida Console", Monaco, monospace;
+    text-align: center;
+    margin: 0;
+}
+
+.background {
+    background: url('https://images.unsplash.com/photo-1457167789633-ff2233ef2b0a?q=80&w=2884&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
+    scale: 1.1;
+    transition:2s ease-in-out;
+}
+
+.background2{
+    background: url('https://images.unsplash.com/photo-1470803233534-acd0cc85f275?q=80&w=2804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2000;
+    scale: 1.1;
+    transition:2s ease-in-out;
+}
+
+div, h1, h2, p {
+    margin: 10px;
+    padding: 10px;
+}
+
+#poem { 
+    margin: auto;
+    padding: 30px 0;
+    text-align: left;
+    width: 360px;
+}
+
+h1, h2, h4 {
+    font-weight: normal;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: purple;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #666;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+h2:before, h4:before {
+    content: '— ';
+}
+
+h2:after, h4:after {
+    content: ' —';
+}
+
+#poem h2 + p:first-letter {
+    float: left;
+    color: purple;
+    font-size: 38px;
+    line-height: 1;
+    margin: 2px 5px 0 0;
+}
+
+#poem p:first-line {
+    font-variant: small-caps;
+    letter-spacing: 1.5px;
+}
+
+#poem p:last-child {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
